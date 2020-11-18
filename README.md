@@ -1,7 +1,7 @@
 # Soccerrr-Pygame
 A soccer shooting game implemented with Python
 ## Demo:
-![demo](https://github.com/Sheldenshi/Soccerrr-Pygame/blob/master/ss.png)
+![demo](https://github.com/Sheldenshi/Soccerrr-Pygame/blob/master/ss.png)</ br>
 Run main.py to play the game.
 
 ## How To Run:
