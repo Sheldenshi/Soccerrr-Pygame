@@ -15,16 +15,16 @@ pygame.init()
 
 font = pygame.font.SysFont(None, 48)
 pygame.display.set_caption("SOCCERRR")
-kicker = pygame.transform.scale(pygame.image.load("kicker.png"), (50, 50))
+kicker = pygame.transform.scale(pygame.image.load("src/kicker.png"), (50, 50))
 kicker_rect = kicker.get_rect()
-soccerball = pygame.transform.scale(pygame.image.load("soccerr.png"), (30, 30))
+soccerball = pygame.transform.scale(pygame.image.load("src/soccerr.png"), (30, 30))
 ball_rect = soccerball.get_rect()
-keeper = pygame.transform.scale(pygame.image.load("keeper.png"), (30, 57))
+keeper = pygame.transform.scale(pygame.image.load("src/keeper.png"), (30, 57))
 keeper_rect = keeper.get_rect()
-wall_image = pygame.transform.scale(pygame.image.load("wall.png"), (30, 18))
-heart = pygame.transform.scale(pygame.image.load("heart.png"), (15, 14))
+wall_image = pygame.transform.scale(pygame.image.load("src/wall.png"), (30, 18))
+heart = pygame.transform.scale(pygame.image.load("src/heart.png"), (15, 14))
 
-background = pygame.image.load("background.png")
+background = pygame.image.load("src/background.png")
 textcolor = BLACK
 window_width = 476
 window_height = 736
@@ -111,6 +111,8 @@ while True:
     making_walls(walls)
     run = True
     while run:
+        clock = pygame.time.Clock()
+        dt = clock.tick(60)
         for event in pygame.event.get():
             if event.type == pygame.QUIT:
                 terminate()
